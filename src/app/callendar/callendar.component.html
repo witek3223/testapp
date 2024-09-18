@@ -1,4 +1,3 @@
-<p>callendar works! {{selectedDate}} {{daysInMonth}} {{startDay}}</p>
 <div>
     <mat-select [value]="selectedDate" (valueChange)="onSelectedDateChange($event)">
         @for (item of months; track $index) {
