@@ -1,0 +1,19 @@
+<p>callendar works! {{selectedDate}} {{daysInMonth}} {{startDay}}</p>
+<div>
+    <mat-select [value]="selectedDate" (valueChange)="onSelectedDateChange($event)">
+        @for (item of months; track $index) {
+            <mat-option [value]="item">{{item + 1}}</mat-option>
+        }
+    </mat-select>
+</div>
+<div class="callendar-container">
+@for (row of daysArray; track row) {
+<div class="row">
+    @for (cell of row; track cell) {
+    <div class="collumn">
+        {{cell}}
+    </div>
+}
+</div>
+}
+</div>

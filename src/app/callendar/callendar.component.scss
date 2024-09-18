@@ -1,0 +1,13 @@
+app-callendar {
+    .callendar-container {
+        display: flex;
+        flex-direction: column;
+        .row {
+            display: flex;
+            .collumn {
+                width: 32px;
+                text-align: center;
+            }
+        }
+    }
+}
